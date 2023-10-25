@@ -29,16 +29,18 @@
     display: flex;
     position: absolute;
     color: #EBFF6D;
-    margin-top: 5vh;
-    margin-left: 2vw;
+    margin-top: 4vh;
+    margin-left: 1vw;
+    font-size: 0.8rem;
 }
 
 .part-one-top-right-text{
     display: flex;
     position: absolute;
     color: #EBFF6D;
-    margin-top: 5vh;
-    margin-left: 90vw;
+    margin-top: 4vh;
+    margin-left: 91vw;
+    font-size: 0.8rem;
 }
 
 .part-one-bottom-left-text{
@@ -46,7 +48,8 @@
     position: absolute;
     color: #EBFF6D;
     margin-top: 90vh;
-    margin-left: 2vw;
+    margin-left: 1vw;
+    font-size: 0.8rem;
 }
 
 .part-one-bottom-right-text{
@@ -54,14 +57,15 @@
     position: absolute;
     color: #EBFF6D;
     margin-top: 90vh;
-    margin-left: 90vw;
+    margin-left: 88vw;
+    font-size: 0.8rem;
 }
 
 .part-one-center-text{
     position: absolute;
     display: flex;
-    top: 50vh;
-    left: 100vh;
+    margin-top: 50vh;
+    margin-left: 40vw;
     font-size: 2rem;
     color: #EBFF6D;
 }
@@ -74,23 +78,25 @@
 }
 
 .part-two-left{
-    width: 50%;
-    height: 100px;
-    margin-left: 200px;
-    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    margin-left: 20vw;
+    margin-top: 15vh;
 }
 
 .part-two-left img{
-    width: 100%;
-    height: 400px;
+    width: 50vh;
+    height: 70vh;
     object-fit: cover;
 }
 
 .part-two-right{
-    width: 50%;
-    margin-left: 150px;
-    margin-top: 250px;
-    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15vh;
+    margin-right: 10vw;
     color: #EBFF6D;
 }
 
@@ -99,8 +105,8 @@
     position: absolute;
     color: #EBFF6D;
     font-size: 0.8rem;
-    margin-top: 475px;
-    margin-left: 400px;
+    margin-top: 80vh;
+    margin-left: 30vw;
 }
 
 .part-two-text-left{
@@ -108,6 +114,8 @@
     position: absolute;
     color: #EBFF6D;
     margin-top: 95vh;
+    margin-left: 1vw;
+    font-size: 0.8rem;
 }
 
 .part-two-text-right{
@@ -115,30 +123,31 @@
     position: absolute;
     color: #EBFF6D;
     margin-top: 95vh;
-    margin-left: 85vw;
+    margin-left: 90vw;
+    font-size: 0.8rem;
 }
 
 
 /* -------Camera Effect----------------- */
 .camera {
-    margin-top: 40px;
-    margin-left: 20px;
+    margin-top: 6vh;
+    margin-left: 1vw;
     position: absolute;
-    width: 1220px;
-    height: 480px;
+    width: 95vw;
+    height: 85vh;
 
     --border-style: 2px solid #EBFF6D;
     --border-space: 10px;
 }
 
 .camera-small {
-    margin-top: 100px;
-    margin-left: 20px;
+    margin-top: 45vh;
+    margin-left: 36vw;
     position: absolute;
-    width: 200px;
-    height: 100px;
+    width: 25vw;
+    height: 20vh;
 
-    --border-style: 2px solid #00fcda;
+    --border-style: 2px solid #EBFF6D;
     --border-space: 5px;
 }
 
@@ -152,7 +161,6 @@
     border-left: var(--border-style);
     border-top: var(--border-style);
     top: var(--border-space);
-    left: var(--border-space);
 }
 
 .camera .top-right {
@@ -169,6 +177,32 @@
 }
 
 .camera .bottom-right {
+    border-right: var(--border-style);
+    border-bottom: var(--border-style);
+    bottom: var(--border-space);
+    right: var(--border-space);
+}
+
+.camera-small .top-left {
+    border-left: var(--border-style);
+    border-top: var(--border-style);
+    top: var(--border-space);
+}
+
+.camera-small .top-right {
+    border-right: var(--border-style);
+    border-top: var(--border-style);
+    top: var(--border-space);
+    right: var(--border-space);
+}
+
+.camera-small .bottom-left {
+    border-left: var(--border-style);
+    border-bottom: var(--border-style);
+    bottom: var(--border-space);
+}
+
+.camera-small .bottom-right {
     border-right: var(--border-style);
     border-bottom: var(--border-style);
     bottom: var(--border-space);
